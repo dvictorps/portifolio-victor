@@ -20,7 +20,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #23002b; /* Your dark purple */
+    --background: #1e293b; /* slate-800 */
     --foreground: #ffffff;
     --text-primary: #f5f5f5; /* Example: Near white */
     --text-secondary: #d4d4d4; /* Example: Light Gray */
