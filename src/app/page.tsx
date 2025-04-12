@@ -19,20 +19,20 @@ export default function Home() {
   }));
 
   return (
-    <div className="relative min-h-screen bg-slate-800 text-gray-300 font-sans p-8 md:p-16 lg:p-24 flex flex-col items-center">
+    <div className="relative min-h-screen bg-background text-text-secondary font-sans p-8 md:p-16 lg:p-24 flex flex-col items-center">
       <div className="absolute top-4 left-4 md:top-6 md:left-6 z-10">
         <LanguageSwitcher />
       </div>
 
       <header className="text-center mb-16 max-w-2xl pt-10">
         {" "}
-        <h1 className="text-5xl md:text-6xl font-bold text-gray-100 mb-2">
+        <h1 className="text-5xl md:text-6xl font-bold text-text-primary mb-2">
           {t("header.name")}
         </h1>
-        <h2 className="text-2xl md:text-3xl font-semibold text-gray-200 mb-4">
+        <h2 className="text-2xl md:text-3xl font-semibold text-text-secondary mb-4">
           {t("header.title")}
         </h2>
-        <p className="text-lg text-gray-400">{t("header.welcome")}</p>
+        <p className="text-lg text-text-muted">{t("header.welcome")}</p>
       </header>
 
       <main className="w-full max-w-3xl">
@@ -63,23 +63,23 @@ export default function Home() {
         </section>
 
         <section id="projects" className="mb-16 scroll-mt-16">
-          <h3 className="text-2xl font-semibold text-gray-100 mb-4 text-center">
+          <h3 className="text-2xl font-semibold text-text-primary mb-4 text-center">
             {t("projects.title")}
           </h3>
-          <p className="text-lg text-gray-400 text-center">
+          <p className="text-lg text-text-muted text-center">
             {t("projects.comingSoon")}
           </p>
         </section>
       </main>
 
-      <footer className="mt-16 pt-8 border-t border-gray-600 w-full max-w-3xl flex justify-center">
+      <footer className="mt-16 pt-8 border-t border-border-color w-full max-w-3xl flex justify-center">
         <div className="flex space-x-6">
           <a
             href="https://www.linkedin.com/in/victor-pereira-3386811b4/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label={t("footer.linkedinAria")}
-            className="text-gray-400 hover:text-cyan-300 transition-colors duration-300"
+            className="text-text-muted hover:text-accent-hover transition-colors duration-300"
           >
             <Linkedin size={24} />
           </a>
@@ -88,21 +88,21 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label={t("footer.githubAria")}
-            className="text-gray-400 hover:text-cyan-300 transition-colors duration-300"
+            className="text-text-muted hover:text-accent-hover transition-colors duration-300"
           >
             <Github size={24} />
           </a>
           <a
             href="mailto:dvictorps@gmail.com"
             aria-label={t("footer.emailAria")}
-            className="text-gray-400 hover:text-cyan-300 transition-colors duration-300"
+            className="text-text-muted hover:text-accent-hover transition-colors duration-300"
           >
             <Mail size={24} />
           </a>
           <a
-            href="#"
+            href="https://github.com/dvictorps/portifolio-victor"
             aria-label={t("footer.codeAria")}
-            className="text-gray-400 hover:text-cyan-300 transition-colors duration-300"
+            className="text-text-muted hover:text-accent-hover transition-colors duration-300"
           >
             <Code size={24} />
           </a>
