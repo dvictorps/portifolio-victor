@@ -1,38 +1,31 @@
-"use client"; // Mark as a Client Component
+"use client";
 
 import { Linkedin, Github, Mail, Code } from "lucide-react";
 import ExperienceCard from "../components/ExperienceCard";
 import { useTranslations } from "next-intl";
 import LanguageSwitcher from "../components/LanguageSwitcher"; // Import the switcher
 
-// Experience data is now fetched via translations
-
 export default function Home() {
   const t = useTranslations("HomePage");
   const tExp = useTranslations("Experiences");
 
-  // Manually construct the experiences array from translations
-  // This assumes a fixed number of experiences (3 in this case)
-  // A more dynamic approach might be needed if the number varies
   const experiences = [0, 1, 2].map((index) => ({
     dateRange: tExp(`${index}.dateRange`),
     title: tExp(`${index}.title`),
     company: tExp(`${index}.company`),
     companyLink: tExp(`${index}.companyLink`),
     description: tExp(`${index}.description`),
-    technologies: tExp.raw(`${index}.technologies`), // Use .raw for arrays
+    technologies: tExp.raw(`${index}.technologies`),
   }));
 
   return (
     <div className="relative min-h-screen bg-slate-800 text-gray-300 font-sans p-8 md:p-16 lg:p-24 flex flex-col items-center">
-      {/* Language Switcher repositioned to top-left */}
       <div className="absolute top-4 left-4 md:top-6 md:left-6 z-10">
         <LanguageSwitcher />
       </div>
 
       <header className="text-center mb-16 max-w-2xl pt-10">
         {" "}
-        {/* Added padding-top to avoid overlap */}
         <h1 className="text-5xl md:text-6xl font-bold text-gray-100 mb-2">
           {t("header.name")}
         </h1>
@@ -82,7 +75,7 @@ export default function Home() {
       <footer className="mt-16 pt-8 border-t border-gray-600 w-full max-w-3xl flex justify-center">
         <div className="flex space-x-6">
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/victor-pereira-3386811b4/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label={t("footer.linkedinAria")}
@@ -91,7 +84,7 @@ export default function Home() {
             <Linkedin size={24} />
           </a>
           <a
-            href="https://github.com"
+            href="https://github.com/dvictorps"
             target="_blank"
             rel="noopener noreferrer"
             aria-label={t("footer.githubAria")}
@@ -100,7 +93,7 @@ export default function Home() {
             <Github size={24} />
           </a>
           <a
-            href="mailto:example@email.com"
+            href="mailto:dvictorps@gmail.com"
             aria-label={t("footer.emailAria")}
             className="text-gray-400 hover:text-cyan-300 transition-colors duration-300"
           >
