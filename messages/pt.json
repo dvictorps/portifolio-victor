@@ -1,0 +1,55 @@
+{
+  "HomePage": {
+    "header": {
+      "name": "Victor Pereira",
+      "title": "Desenvolvedor Fullstack",
+      "welcome": "Bem-vindo ao meu portfólio."
+    },
+    "about": {
+      "paragraph1": "Apaixonado por programação desde a infância, com foco em desenvolvimento de software e interesse especial por jogos.",
+      "paragraph2": "Minha experiência full-stack inclui desenvolvimento front-end com React (Vite/TypeScript) e back-end com .NET/Entity Framework (UNIPAM), além de desenvolvimento com React.js, integração de dados (N8N) e microserviços Java/Spring Boot (B2LIST).",
+      "paragraph3": "Busco aplicar minhas habilidades para construir aplicações robustas e eficientes. Vamos nos conectar!"
+    },
+    "projects": {
+      "title": "Projetos",
+      "comingSoon": "Seção de projetos em breve..."
+    },
+    "footer": {
+      "linkedinAria": "LinkedIn",
+      "githubAria": "GitHub",
+      "emailAria": "Email",
+      "codeAria": "Portfólio/Código"
+    },
+    "languageSwitcher": {
+      "label": "Idioma:",
+      "en": "Inglês",
+      "pt": "Português"
+    }
+  },
+  "Experiences": [
+    {
+      "dateRange": "Dez 2023 - Fev 2025",
+      "title": "Desenvolvedor Full Stack",
+      "company": "B2LIST",
+      "companyLink": "#",
+      "description": "Atualmente trabalhando no desenvolvimento de páginas, componentes e consumo de endpoints, utilizando React.js, Styled Components e React Query.",
+      "technologies": ["React.js", "Styled Components", "React Query", "Desenvolvimento Frontend", "XML"]
+    },
+    {
+      "dateRange": "Mar 2022 - Dez 2023",
+      "title": "Desenvolvedor Full Stack (Estágio)",
+      "company": "Centro Universitário de Patos de Minas - UNIPAM",
+      "companyLink": "#",
+      "description": "Trabalhou em projetos internos desenvolvendo componentes, páginas web e endpoints, utilizando tecnologias como React.js e Entity Framework, além de prestar suporte a usuários.",
+      "technologies": ["React.js", "Entity Framework", "Desenvolvimento Orientado a Testes", "XML"]
+    },
+    {
+      "dateRange": "Dez 2021 - Jul 2022",
+      "title": "Assistente de TI (Estágio)",
+      "company": "Vertical Investimentos",
+      "companyLink": "#",
+      "description": "Assistente de TI, realizando troca e manutenção de computadores e prestando suporte a usuários.",
+      "technologies": ["Manutenção de Computadores", "Suporte ao Usuário", "Comunicação"]
+    }
+  ]
+} 

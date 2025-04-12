@@ -1,0 +1,55 @@
+{
+  "HomePage": {
+    "header": {
+      "name": "Victor Pereira",
+      "title": "Fullstack Developer",
+      "welcome": "Welcome to my portfolio."
+    },
+    "about": {
+      "paragraph1": "Passionate about programming since childhood, focusing on software development with a special interest in games.",
+      "paragraph2": "My full-stack experience includes front-end development with React (Vite/TypeScript) and back-end with .NET/Entity Framework (UNIPAM), as well as development with React.js, data integration (N8N), and Java/Spring Boot microservices (B2LIST).",
+      "paragraph3": "I seek to apply my skills to build robust and efficient applications. Let's connect!"
+    },
+    "projects": {
+      "title": "Projects",
+      "comingSoon": "Projects section coming soon..."
+    },
+    "footer": {
+      "linkedinAria": "LinkedIn",
+      "githubAria": "GitHub",
+      "emailAria": "Email",
+      "codeAria": "Portfolio/Code"
+    },
+    "languageSwitcher": {
+      "label": "Language:",
+      "en": "English",
+      "pt": "Portuguese"
+    }
+  },
+  "Experiences": [
+    {
+      "dateRange": "Dec 2023 - Feb 2025",
+      "title": "Full Stack Developer",
+      "company": "B2LIST",
+      "companyLink": "#",
+      "description": "Currently working on the development of pages, components, and endpoint consumption, using React.js, Styled Components, and React Query.",
+      "technologies": ["React.js", "Styled Components", "React Query", "Frontend Development", "XML"]
+    },
+    {
+      "dateRange": "Mar 2022 - Dec 2023",
+      "title": "Full Stack Developer (Internship)",
+      "company": "Centro Universitário de Patos de Minas - UNIPAM",
+      "companyLink": "#",
+      "description": "Worked on internal projects developing components, web pages, and endpoints, using technologies like React.js and Entity Framework, in addition to providing user support.",
+      "technologies": ["React.js", "Entity Framework", "Test-driven Development", "XML"]
+    },
+    {
+      "dateRange": "Dec 2021 - Jul 2022",
+      "title": "IT Assistant (Internship)",
+      "company": "Vertical Investimentos",
+      "companyLink": "#",
+      "description": "IT Assistant, performing computer replacement and maintenance and providing user support.",
+      "technologies": ["Computer Maintenance", "User Support", "Communication"]
+    }
+  ]
+} 
