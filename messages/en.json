@@ -33,7 +33,20 @@
       "company": "B2LIST",
       "companyLink": "#",
       "description": "Currently working on the development of pages, components, and endpoint consumption, using React.js, Styled Components, and React Query.",
-      "technologies": ["React.js", "Styled Components", "React Query", "Frontend Development", "XML"]
+      "technologies": [
+        "Front-end Development",
+        "XML",
+        "TypeScript",
+        "React.js",
+        "Amazon Web Services",
+        "Node.js",
+        "Web Development",
+        "HTML",
+        "Styled-components",
+        "JavaScript",
+        "CSS",
+        "React Query"
+      ]
     },
     {
       "dateRange": "Mar 2022 - Dec 2023",
@@ -41,7 +54,25 @@
       "company": "Centro Universitário de Patos de Minas - UNIPAM",
       "companyLink": "#",
       "description": "Worked on internal projects developing components, web pages, and endpoints, using technologies like React.js and Entity Framework, in addition to providing user support.",
-      "technologies": ["React.js", "Entity Framework", "Test-driven Development", "XML"]
+      "technologies": [
+        "Test-driven Development",
+        "XML",
+        "Git",
+        "TypeScript",
+        "React.js",
+        "Web Development",
+        "Entity Framework",
+        "Vite.js",
+        "Cypress.io",
+        "Technical Troubleshooting",
+        "Communication",
+        "HTML",
+        "C#",
+        "JavaScript",
+        "User Experience (UX)",
+        "CSS",
+        "Test Execution"
+      ]
     },
     {
       "dateRange": "Dec 2021 - Jul 2022",

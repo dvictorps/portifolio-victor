@@ -4,7 +4,6 @@ interface ExperienceCardProps {
   dateRange: string;
   title: string;
   company: string;
-  companyLink: string;
   description: string;
   technologies: string[];
 }
@@ -13,7 +12,6 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({
   dateRange,
   title,
   company,
-  companyLink,
   description,
   technologies,
 }) => {
@@ -31,10 +29,9 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({
           <div>
             <a
               className="inline-flex items-baseline font-medium leading-tight text-text-primary hover:text-accent-hover focus-visible:text-accent-hover group/link text-lg"
-              href={companyLink}
-              target="_blank"
-              rel="noreferrer noopener"
-              aria-label={`${title} at ${company} (opens in a new tab)`}
+              href="#"
+              onClick={(e) => e.preventDefault()}
+              aria-label={title}
             >
               <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
               <span>

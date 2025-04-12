@@ -13,7 +13,6 @@ export default function Home() {
     dateRange: tExp(`${index}.dateRange`),
     title: tExp(`${index}.title`),
     company: tExp(`${index}.company`),
-    companyLink: tExp(`${index}.companyLink`),
     description: tExp(`${index}.description`),
     technologies: tExp.raw(`${index}.technologies`),
   }));
@@ -54,7 +53,6 @@ export default function Home() {
                 dateRange={exp.dateRange}
                 title={exp.title}
                 company={exp.company}
-                companyLink={exp.companyLink}
                 description={exp.description}
                 technologies={exp.technologies}
               />
