@@ -24,6 +24,10 @@
       "label": "Idioma:",
       "en": "Inglês",
       "pt": "Português"
+    },
+    "nav": {
+      "about": "Sobre Mim",
+      "experience": "Experiência"
     }
   },
   "Experiences": [
@@ -86,10 +90,10 @@
   "Projects": [
     {
       "title": "Shadows of Void",
-      "description": "Shadows of Void é um jogo RPG Idle com itemização profunda e alguma jogabilidade interativa. O projeto está sendo feito com Programação em Par com IA como teste e como hobby.",
+      "description": "Shadows of Void é um jogo RPG Idle com itemização profunda e jogabilidade interativa. O projeto está sendo feito em React, utilizando novos conceitos de desenvolvimento com IDE's que possuem agentes de IA.",
       "imageUrl": "/images/2025-04-20 014724.png",
       "projectUrl": "https://shadows-of-void.vercel.app/",
-      "repoUrl": null
+      "repoUrl": "https://github.com/dvictorps/shadows-of-void"
     }
   ]
 } 

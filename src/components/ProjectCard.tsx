@@ -1,13 +1,13 @@
 import React from "react";
 import Image from "next/image";
-import { Link, Github } from "lucide-react"; // Import icons
+import { Link, Github } from "lucide-react";
 
 interface ProjectCardProps {
   title: string;
   description: string;
   imageUrl: string;
   projectUrl: string;
-  repoUrl?: string | null; // Optional repo URL
+  repoUrl?: string | null;
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({
@@ -18,7 +18,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   repoUrl,
 }) => {
   return (
-    <div className="mb-12 last:mb-0 overflow-hidden rounded-lg shadow-lg bg-slate-800/50 border border-border-color transition-shadow hover:shadow-cyan-300/20">
+    <div className="max-w-md w-full overflow-hidden rounded-lg shadow-lg transition-all duration-300 hover:shadow-[var(--accent)]/20 hover:bg-white/5">
       <a
         href={projectUrl}
         target="_blank"
@@ -28,31 +28,33 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         <Image
           src={imageUrl}
           alt={`Thumbnail for ${title}`}
-          width={800} // Adjust width as needed
-          height={450} // Adjust height (e.g., 16:9 ratio)
-          className="w-full object-cover" // Make image cover the area
+          width={640}
+          height={360}
+          className="w-full object-cover border-0 rounded-t-lg"
         />
       </a>
-      <div className="p-6">
-        <h4 className="font-semibold text-xl mb-2 text-text-primary">
+      <div className="p-4">
+        <h4 className="font-semibold text-lg mb-1 text-[var(--text-primary)]">
           <a
             href={projectUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-accent-hover focus-visible:text-accent-hover transition-colors"
+            className="hover:text-[var(--accent-hover)] focus-visible:text-[var(--accent-hover)] transition-colors"
             aria-label={`${title} (opens project link in a new tab)`}
           >
             {title}
           </a>
         </h4>
-        <p className="text-text-secondary mb-4">{description}</p>
+        <p className="text-sm text-[var(--text-secondary)] mb-3">
+          {description}
+        </p>
         <div className="flex space-x-4 mt-auto">
           <a
             href={projectUrl}
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Visit project website (opens in a new tab)"
-            className="text-text-muted hover:text-accent-hover transition-colors"
+            className="text-[var(--text-secondary)] hover:text-[var(--accent-hover)] transition-colors"
           >
             <Link size={20} />
           </a>
@@ -62,7 +64,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Visit code repository (opens in a new tab)"
-              className="text-text-muted hover:text-accent-hover transition-colors"
+              className="text-[var(--text-secondary)] hover:text-[var(--accent-hover)] transition-colors"
             >
               <Github size={20} />
             </a>

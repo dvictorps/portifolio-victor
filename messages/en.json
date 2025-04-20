@@ -24,6 +24,10 @@
       "label": "Language:",
       "en": "English",
       "pt": "Portuguese"
+    },
+    "nav": {
+      "about": "About Me",
+      "experience": "Experience"
     }
   },
   "Experiences": [
@@ -86,10 +90,10 @@
   "Projects": [
     {
       "title": "Shadows of Void",
-      "description": "Shadows of Void is an RPG Idle game with deep itemization and some interactive gameplay. The project is being made with AI Pair Programming as a test and as a hobby.",
+      "description": "Shadows of Void is an RPG Idle game with deep itemization and interactive gameplay. The project is being developed in React, utilizing new development concepts with IDEs that feature AI agents.",
       "imageUrl": "/images/2025-04-20 014724.png",
       "projectUrl": "https://shadows-of-void.vercel.app/",
-      "repoUrl": null
+      "repoUrl": "https://github.com/dvictorps/shadows-of-void"
     }
   ]
 } 

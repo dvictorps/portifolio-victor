@@ -51,7 +51,15 @@ const localeFlagComponents: {
   pt: BrazilFlag,
 };
 
-export default function LanguageSwitcher() {
+interface LanguageSwitcherProps {
+  flagWidth?: number;
+  flagHeight?: number;
+}
+
+export default function LanguageSwitcher({
+  flagWidth = 24,
+  flagHeight = 16,
+}: LanguageSwitcherProps) {
   const currentLocale = useLocale();
   const router = useRouter();
 
@@ -65,7 +73,7 @@ export default function LanguageSwitcher() {
   const otherLocales = locales.filter((l) => l !== currentLocale);
 
   return (
-    <div className="flex items-center space-x-2">
+    <div className="flex items-center space-x-2 p-1">
       {otherLocales.map((locale: string) => {
         const FlagComponent = localeFlagComponents[locale];
         return (
@@ -73,12 +81,12 @@ export default function LanguageSwitcher() {
             key={locale}
             onClick={() => handleChange(locale)}
             title={`Switch to ${locale === "en" ? "English" : "Portuguese"}`}
-            className="p-1 rounded hover:bg-slate-700 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:ring-opacity-50 flex items-center justify-center"
+            className="p-2 rounded hover:bg-slate-700 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-[var(--accent)] focus:ring-opacity-50 flex items-center justify-center"
             aria-label={`Switch to ${
               locale === "en" ? "English" : "Portuguese"
             }`}
           >
-            <FlagComponent width={24} height={16} />
+            <FlagComponent width={flagWidth} height={flagHeight} />
           </button>
         );
       })}
