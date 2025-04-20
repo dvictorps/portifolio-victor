@@ -82,5 +82,14 @@
       "description": "IT Assistant, performing computer replacement and maintenance and providing user support.",
       "technologies": ["Computer Maintenance", "User Support", "Communication"]
     }
+  ],
+  "Projects": [
+    {
+      "title": "Shadows of Void",
+      "description": "Shadows of Void is an RPG Idle game with deep itemization and some interactive gameplay. The project is being made with AI Pair Programming as a test and as a hobby.",
+      "imageUrl": "/images/2025-04-20 014724.png",
+      "projectUrl": "https://shadows-of-void.vercel.app/",
+      "repoUrl": null
+    }
   ]
 } 

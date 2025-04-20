@@ -2,12 +2,14 @@
 
 import { Linkedin, Github, Mail, Code } from "lucide-react";
 import ExperienceCard from "../components/ExperienceCard";
+import ProjectCard from "../components/ProjectCard";
 import { useTranslations } from "next-intl";
 import LanguageSwitcher from "../components/LanguageSwitcher"; // Import the switcher
 
 export default function Home() {
   const t = useTranslations("HomePage");
   const tExp = useTranslations("Experiences");
+  const tProj = useTranslations("Projects");
 
   const experiences = [0, 1, 2].map((index) => ({
     dateRange: tExp(`${index}.dateRange`),
@@ -15,6 +17,14 @@ export default function Home() {
     company: tExp(`${index}.company`),
     description: tExp(`${index}.description`),
     technologies: tExp.raw(`${index}.technologies`),
+  }));
+
+  const projects = [0].map((index) => ({
+    title: tProj(`${index}.title`),
+    description: tProj(`${index}.description`),
+    imageUrl: tProj(`${index}.imageUrl`),
+    projectUrl: tProj(`${index}.projectUrl`),
+    repoUrl: tProj(`${index}.repoUrl`) || null,
   }));
 
   return (
@@ -61,12 +71,21 @@ export default function Home() {
         </section>
 
         <section id="projects" className="mb-16 scroll-mt-16">
-          <h3 className="text-2xl font-semibold text-text-primary mb-4 text-center">
+          <h3 className="text-2xl font-semibold text-text-primary mb-8 text-center">
             {t("projects.title")}
           </h3>
-          <p className="text-lg text-text-muted text-center">
-            {t("projects.comingSoon")}
-          </p>
+          <div className="grid grid-cols-1 gap-8">
+            {projects.map((proj, index) => (
+              <ProjectCard
+                key={index}
+                title={proj.title}
+                description={proj.description}
+                imageUrl={proj.imageUrl}
+                projectUrl={proj.projectUrl}
+                repoUrl={proj.repoUrl}
+              />
+            ))}
+          </div>
         </section>
       </main>
 
