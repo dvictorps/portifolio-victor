@@ -32,14 +32,11 @@ const NavBar: React.FC<NavBarProps> = ({ scrollContainerRef }) => {
   ];
 
   const scrollToSection = (sectionId: string) => {
-    const container = scrollContainerRef.current;
     const section = document.getElementById(sectionId);
-
-    if (container && section) {
-      const offsetTop = section.offsetTop - 60; // Adjust offset if needed (e.g., for sticky header)
-      container.scrollTo({
-        top: offsetTop,
+    if (section && scrollContainerRef.current) {
+      section.scrollIntoView({
         behavior: "smooth",
+        block: "start",
       });
     }
   };
